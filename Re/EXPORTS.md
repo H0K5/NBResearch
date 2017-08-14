@@ -19,12 +19,12 @@ CTEStartTimer                                   00000001C0004450 15
 CTESystemUpTime                                 00000001C0004490 16          
 DllInitialize                                   00000001C0002BD0 17          
 DllUnload                                       00000001C0004570 18          
-TdiBuildNetbiosAddress                          00000001C00045B0 19          
-TdiBuildNetbiosAddressEa                        00000001C00045F0 20          
-TdiCopyBufferToMdl                              00000001C0001010 21          
-TdiCopyBufferToMdlWithReservedMappingAtDpcLevel 00000001C0004670 22          
-TdiCopyMdlChainToMdlChain                       00000001C00047D0 23          
-TdiCopyMdlToBuffer                              00000001C0002B10 24          
+TdiBuildNetbiosAddress                          00000001C00045B0 19           !!!!!!!!!!!!!!!!         
+TdiBuildNetbiosAddressEa                        00000001C00045F0 20           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TdiCopyBufferToMdl                              00000001C0001010 21           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TdiCopyBufferToMdlWithReservedMappingAtDpcLevel 00000001C0004670 22           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TdiCopyMdlChainToMdlChain                       00000001C00047D0 23           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TdiCopyMdlToBuffer                              00000001C0002B10 24           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 TdiDefaultChainedRcvDatagramHandler             00000001C0004AC0 25          
 TdiDefaultChainedRcvExpeditedHandler            00000001C0004AC0 26          
 TdiDefaultChainedReceiveHandler                 00000001C0004AC0 27          
