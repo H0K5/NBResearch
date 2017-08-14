@@ -143,5 +143,6 @@ Address                 Length   Type String
 .idata:00000001C00098D0 0000000D C    ntoskrnl.exe                       
 .idata:00000001C0009914 00000008 C    TDI.SYS                            
 # Cheatsheet:
-<html><a href="https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/">debugging</a></html>
+<html><a href="https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/">debugging</a></html> <br>
+<html><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debug-universal-drivers--kernel-mode-#lookingatvariables">drv debug</a></html> <br>
 
