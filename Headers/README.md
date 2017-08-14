@@ -5,25 +5,25 @@ NCB Structure
 
 The NCB structure represents a network control block. It contains information about the command to perform, an optional post routine, an optional event handle, and a pointer to a buffer that is used for messages or other data. A pointer to this structure is passed to the Netbios function.
 Syntax
-
-typedef struct _NCB {
-  UCHAR  ncb_command;
-  UCHAR  ncb_retcode;
-  UCHAR  ncb_lsn;
-  UCHAR  ncb_num;
-  PUCHAR ncb_buffer;
-  WORD   ncb_length;
-  UCHAR  ncb_callname[NCBNAMSZ];
-  UCHAR  ncb_name[NCBNAMSZ];
-  UCHAR  ncb_rto;
-  UCHAR  ncb_sto;
-  void   (CALLBACK *ncb_post)( struct *NCB);
-  UCHAR  ncb_lana_num;
-  UCHAR  ncb_cmd_cplt;
-  UCHAR  ncb_reserve[X];
-  HANDLE ncb_event;
-} NCB, *PNCB;
-
+<br>
+typedef struct _NCB { <br>
+  UCHAR  ncb_command;<br>
+  UCHAR  ncb_retcode;<br>
+  UCHAR  ncb_lsn;<br>
+  UCHAR  ncb_num;<br>
+  PUCHAR ncb_buffer;<br>
+  WORD   ncb_length;<br>
+  UCHAR  ncb_callname[NCBNAMSZ];<br>
+  UCHAR  ncb_name[NCBNAMSZ];<br>
+  UCHAR  ncb_rto;<br>
+  UCHAR  ncb_sto;<br>
+  void   (CALLBACK *ncb_post)( struct *NCB);<br>
+  UCHAR  ncb_lana_num;<br>
+  UCHAR  ncb_cmd_cplt;<br>
+  UCHAR  ncb_reserve[X];<br>
+  HANDLE ncb_event;<br>
+} NCB, *PNCB;<br>
+<br>
 Members
 
 ncb_command
