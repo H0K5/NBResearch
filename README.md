@@ -1,4 +1,4 @@
-# NBtResearch
+# NBResearch
 this repository is for my own research about netbios over tcp protocol, and contains all sorts of external resources, in order to help me migrate the work faster from one environment to another.
 # Motive
 Netbios over tcp is a default protocol on any windows machine, evan in its latest forms. meaning that any security bug that will maybe be found in NetBt.sys / NetBios.sys will effect many operating machines. in a addition such network protocols take arbitrary packets from the outer net and ,(for better efficacy), deal with the data straight in the kernel (the main drivers are listed above). from the latest smb vulnerabilities found in srv.sys (see sleepya work on reversing the 'ethereal-family') we can see that there is big potential in network drivers for RCE's, while the ssesion service over tcp (netbios port-139) takes the user parameters and makes direct analysis over the remote packet data in order to operate. this interesting fact make's a great potential in study'ing this specific protocol, as all we need is an opertunity to control the MDL- for arbitrery write, or better get one pointer for code execution.
