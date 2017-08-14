@@ -143,5 +143,5 @@ Address                 Length   Type String
 .idata:00000001C00098D0 0000000D C    ntoskrnl.exe                       
 .idata:00000001C0009914 00000008 C    TDI.SYS                            
 # Cheatsheet:
-<html><a href="https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/"></a>debugging</html>
+<html><a href="https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/">debugging</a></html>
 
