@@ -142,6 +142,44 @@ Address                 Length   Type String
 .rdata:00000001C00064BC 00000009 C    .rsrc$02                           
 .idata:00000001C00098D0 0000000D C    ntoskrnl.exe                       
 .idata:00000001C0009914 00000008 C    TDI.SYS                            
+# Tdi.sys
+Address                 Length   Type String                         
+-------                 ------   ---- ------                         
+.rdata:00000001C00061B0 00000011 C    TransportAddress               
+.rdata:00000001C0006230 00000019 C    Client: %wZ returned %x\n      
+.rdata:00000001C0006278 0000001A C    .text$lp01tdi.sys!20_pri7      
+.rdata:00000001C000629C 00000020 C    .text$lp03tdi.sys!35_hybridboot
+.rdata:00000001C00062C4 00000020 C    .text$lp04tdi.sys!35_hybridboot
+.rdata:00000001C00062EC 00000009 C    .text$mn                       
+.rdata:00000001C0006300 0000000C C    .text$mn$00                    
+.rdata:00000001C0006314 0000000C C    .text$mn$21                    
+.rdata:00000001C0006328 00000009 C    .text$zy                       
+.rdata:00000001C000633C 00000009 C    .text$zz                       
+.rdata:00000001C0006350 0000000B C    .rdata$brc                     
+.rdata:00000001C0006364 00000007 C    .rdata                         
+.rdata:00000001C0006374 0000000A C    .rdata$zz                      
+.rdata:00000001C0006388 0000000E C    .rdata$zzzdbg                  
+.rdata:00000001C00063A0 00000007 C    .xdata                         
+.rdata:00000001C00063B0 0000000B C    .data$pr03                     
+.rdata:00000001C00063C4 00000005 C    .bss                           
+.rdata:00000001C00063D4 00000008 C    .bss$03                        
+.rdata:00000001C00063E4 0000000A C    .bss$dk03                      
+.rdata:00000001C00063F8 00000007 C    .pdata                         
+.rdata:00000001C0006408 00000009 C    .idata$5                       
+.rdata:00000001C000641C 00000007 C    .00cfg                         
+.rdata:00000001C000642C 00000009 C    .idata$2                       
+.rdata:00000001C0006440 00000009 C    .idata$3                       
+.rdata:00000001C0006454 00000009 C    .idata$4                       
+.rdata:00000001C0006468 00000009 C    .idata$6                       
+.rdata:00000001C000647C 00000008 C    PAGE$zz                        
+.rdata:00000001C000648C 00000007 C    .edata                         
+.rdata:00000001C000649C 0000001F C    INIT$lp04tdi.sys!35_hybridboot 
+.rdata:00000001C00064C4 00000008 C    INIT$zz                        
+.rdata:00000001C00064D4 00000007 C    .gfids                         
+.rdata:00000001C00064E4 00000009 C    .rsrc$01                       
+.rdata:00000001C00064F8 00000009 C    .rsrc$02                       
+.idata:00000001C00096FE 0000000D C    ntoskrnl.exe                   
+.idata:00000001C0009756 00000009 C    NDIS.SYS                       
 # Cheatsheet:
 <html><a href="https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/">debugging</a></html> <br>
 <html><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debug-universal-drivers--kernel-mode-#lookingatvariables">drv debug</a></html> <br>
