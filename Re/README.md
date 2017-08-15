@@ -1,4 +1,4 @@
-# strings found in The latest drivers:
+# strings found in The latest drivers: 
 # NetBt.sys:
 Address                 Length   Type String                           
 -------                 ------   ---- ------                           
