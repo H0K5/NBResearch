@@ -7,7 +7,7 @@ port 139 (session service) takes in account the data segmant in the remote packe
 
 NORMAL:
 <br>
-<br>Query:
+Query:
 <br>
 <br>0000   00 00 00 01 00 06 a0 ab 1b 5e 44 f2 00 00 08 00  .........^D.....
 <br>0010   45 00 00 4e 00 00 40 00 40 11 b7 48 c0 a8 01 01  E..N..@.@..H....
@@ -23,7 +23,7 @@ NORMAL:
 <br>0040   41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41  AAAAAAAAAAAAAAAA
 <br>0050   41 41 41 41 41 41 41 41 41 00 00 21 00 01        AAAAAAAAA..!..
 <br>
-<br>Response:
+Response:
 <br>
 <br>0000   00 04 00 01 00 06 9c 2a 70 13 e5 2b 00 17 08 00  .......*p..+....
 <br>0010   45 00 00 ef 2b 73 00 00 80 11 8b 34 c0 a8 01 05  E...+s.....4....
@@ -42,8 +42,7 @@ NORMAL:
 <br>00e0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 <br>00f0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ...............
 <br>
-<br>Corrupted: Junk Query, that can go up to gigabytes of
-<br>Transmission.
+Corrupted: Junk Query, that can go up to gigabytes of Transmission.
 <br>
 <br>'cat /dev/urandom | nc 192.168.1.5 139'
 <br>
@@ -74,7 +73,7 @@ NORMAL:
 <br>0180   2c de b4 c1 b8 17 4e c6 a8 ea ca c9 02 bb 21 77  ,.....N.......!w
 <br>0190   44 7c 09 61 18 46 c9 85 42 a5 b8 02 d2 06 5c d2  D|.a.F..B.....\.
 <br>01a0   1a d4 2b 41 02 a9 6a fb a7 83 fa a7 ca 21 1a a2  ..+A..j......!..
-<br>01b0   60 68 87 71 fa c6 0f 25 0a 61 e3 d3 a7 34 16 00  `h.q...%.a...4..
+<br>01b0   60 68 87 71 fa c6 0f 25 0a 61 e3 d3 a7 34 16 00  h.q...%.a...4..
 <br>01c0   1b c9 2d 16 77 69 ca d8 d0 24 ef e7 62 2a a8 f8  ..-.wi...$..b*..
 <br>01d0   a2 7a b5 9f de af 8c d4 cc 9e d7 ac e1 7b 8e b2  .z...........{..
 <br>01e0   49 0d 86 9f db 5b 2b e7 84 44 84 f8 35 dc 52 39  I....[+..D..5.R9
@@ -85,7 +84,7 @@ NORMAL:
 <br>0230   95 95 36 71 06 73 20 1c e4 81 2c 26 54 0b 84 18  ..6q.s ...,&T...
 <br>0240   1e 24 48 72 22 93 cf 85 27 f1 95 0e 5f 94 a1 dc  .$Hr"...'..._...
 <br>0250   51 47 dc 9c 21 e9 0f 66 e6 d6 d8 45 28 3f b7 18  QG..!..f...E(?..
-<br>0260   8b 1c 92 1c 50 60 48 7f ca 3a 23 91 68 71 67 15  ....P`H..:#.hqg.
+<br>0260   8b 1c 92 1c 50 60 48 7f ca 3a 23 91 68 71 67 15  ....PH..:#.hqg.
 <br>0270   1f b4 fe 69 96 65 cf 34 df 90 80 dc a2 64 f1 4a  ...i.e.4.....d.J
 <br>0280   0a b9 2e f2 5c 1f 05 f7 24 96 c0 82 6c af 71 7c  ....\...$...l.q|
 <br>0290   98 77 57 bf 05 5d 9e a5 81 3b 81 f9 f1 a4 36 15  .wW..]...;....6.
@@ -106,7 +105,7 @@ NORMAL:
 <br>0380   d6 62 ed 47 d3 02 8c 20 02 83 33 1d 8b 11 59 77  .b.G... ..3...Yw
 <br>0390   75 97 3b dd cc ca a5 29 37 0b c9 37 49 17 d0 40  u.;....)7..7I..@
 <br>03a0   26 7a 3e 49 f2 e7 f6 ae e0 56 d2 4c 9f 3e 2b 14  &z>I.....V.L.>+.
-<br>03b0   cf 84 82 00 ce a3 8b ec 60 14 fc 1b b5 16 b5 e4  ........`.......
+<br>03b0   cf 84 82 00 ce a3 8b ec 60 14 fc 1b b5 16 b5 e4  ...............
 <br>03c0   cd 43 42 8c 96 c6 8e 69 4c 96 a1 0f f4 e3 87 13  .CB....iL.......
 <br>03d0   62 c8 c2 20 e7 dd 0b a5 d9 e7 03 74 68 8a 5f 8a  b.. .......th._.
 <br>03e0   0e a7 33 72 d1 97 59 fd 90 09 3f 4c d0 0d 47 83  ..3r..Y...?L..G.
@@ -137,8 +136,8 @@ NORMAL:
 <br>0570   94 42 8c 09 2f 3b a4 c2 4f 5a c8 cb 28 03 ed 92  .B../;..OZ..(...
 <br>0580   f3 0e a8 fe f5 52 2f 0e 89 5e 04 3d 83 d1 11 07  .....R/..^.=....
 <br>0590   c0 b1 32 20 c8 bb b5 a8 ab d9 d7 e2 9d 8a d5 34  ..2 ...........4
-<br>05a0   e5 34 76 27 41 d6 99 63 1c 16 28 11 27 08 ce 38  .4v'A..c..(.'..8
-<br>05b0   5c 96 98 9d 60 d8 8a 63 7f 47 bf 16 72 e0 80 d1  \...`..c.G..r...
+<br>05a0   e5 34 76 27 41 d6 99 63 1c 16 28 11 27 08 ce 38  .4vA..c..(.'..8
+<br>05b0   5c 96 98 9d 60 d8 8a 63 7f 47 bf 16 72 e0 80 d1  \.....c.G..r...
 <br>05c0   4d 88 39 6d fe bd 85 26 90 51 0f 84 83 31 af b5  M.9m...&.Q...1..
 <br>05d0   36 f6 7c 4a db 78 d9 a4 fb 86 73 68 51 39 85 c6  6.|J.x....shQ9..
 <br>05e0   10 76 f7 d3 a0 be d6 12 67 a1 21 29              .v......g.!)
@@ -160,11 +159,11 @@ NORMAL:
 <br>00e0   e0 a6 2e 58 0c 41 26 b1 7d c1 51 95 dc 8d b0 4e  ...X.A&.}.Q....N
 <br>00f0   6b 7b 81 5c c4 70 48 f9 07 4e 71 4a 7d fb fc ad  k{.\.pH..NqJ}...
 <br>0100   7a 48 2a ae 12 68 0a 05 e3 8c 31 ff c5 84 2d a3  zH*..h....1...-.
-<br>0110   ba 72 09 b9 b0 eb b1 d8 60 bc b5 e3 63 4d 06 c9  .r......`...cM..
+<br>0110   ba 72 09 b9 b0 eb b1 d8 60 bc b5 e3 63 4d 06 c9  .r.........cM..
 <br>0120   7c 4b cf 5f da c1 d7 f6 ef 38 be e8 7d 99 47 97  |K._.....8..}.G.
 <br>0130   8e 65 13 de e5 4d 22 a8 88 94 bf 9f 04 76 99 1a  .e...M"......v..
 <br>0140   6d 5b 89 34 51 5e 85 a9 e4 ae 9f 26 f9 0c 7e b3  m[.4Q^.....&..~.
-<br>0150   bc 60 2e 78 d5 cb 7b ea 54 68 db 41 2d 59 9e e3  .`.x..{.Th.A-Y..
+<br>0150   bc 60 2e 78 d5 cb 7b ea 54 68 db 41 2d 59 9e e3  ..x..{.Th.A-Y..
 <br>0160   00 3e 1a 6e c7 4f 6e 4c a3 ef 78 77 87 4a ed 00  .>.n.OnL..xw.J..
 <br>0170   f1 8f ea f3 3c a2 38 0e f5 56 d7 dd 50 36 cd 25  ....<.8..V..P6.%
 <br>0180   02 49 27 d8 9a 3f 9b d1 aa 29 d3 fd 04 51 f0 0e  .I'..?...)...Q..
@@ -192,14 +191,14 @@ NORMAL:
 <br>02e0   71 db 26 09 d4 a3 b3 79 4d 87 eb 2f 7e 99 18 05  q.&....yM../~...
 <br>02f0   22 6c 12 b6 87 a6 32 08 00 c9 37 a3 43 74 84 4e  "l....2...7.Ct.N
 <br>0300   1c ac 4e 04 bf e3 23 4c 24 2d 1a 9e cd 15 92 64  ..N...#L$-.....d
-<br>0310   b0 b1 4b 60 7b 22 c2 c0 aa 3d c0 ca 9f 41 1a 43  ..K`{"...=...A.C
-<br>0320   1a 46 d2 e1 0a 34 00 c9 56 2b 5b 8a 70 60 12 90  .F...4..V+[.p`..
+<br>0310   b0 b1 4b 60 7b 22 c2 c0 aa 3d c0 ca 9f 41 1a 43  ..K{"...=...A.C
+<br>0320   1a 46 d2 e1 0a 34 00 c9 56 2b 5b 8a 70 60 12 90  .F...4..V+[.p..
 <br>0330   c0 90 0a a7 6b 4d 19 d8 14 80 39 6f 13 36 0c 4a  ....kM....9o.6.J
 <br>0340   c0 af 2a 7e 13 66 3d ae d9 06 7e c2 86 1a e2 81  ..*~.f=...~.....
 <br>0350   71 5b 80 1a f1 0e 18 f0 85 22 b5 5a ef 4a 39 6f  q[.......".Z.J9o
 <br>0360   95 73 e5 15 1b 64 c2 c8 86 58 a4 31 da 01 db 30  .s...d...X.1...0
 <br>0370   aa 0a 9c 84 7c ca 02 2f 9c 95 92 86 11 65 c6 64  ....|../.....e.d
-<br>0380   fa d5 49 d7 15 c8 81 60 ac 8f f0 16 71 18 98 16  ..I....`....q...
+<br>0380   fa d5 49 d7 15 c8 81 60 ac 8f f0 16 71 18 98 16  ..I........q...
 <br>0390   bb a6 1b d7 78 23 fa 47 3e 3b 29 ec e9 f0 b1 10  ....x#.G>;).....
 <br>03a0   a7 fc 88 96 43 95 4f b6 93 55 04 2f da 46 4e fe  ....C.O..U./.FN.
 <br>03b0   c6 0a 14 da 91 a9 6f 13 e5 3a 12 f6 8d 26 bf af  ......o..:...&..
@@ -209,7 +208,7 @@ NORMAL:
 <br>03f0   02 a6 b3 13 16 5a 08 30 c1 81 74 cd 9b 71 90 20  .....Z.0..t..q. 
 <br>0400   9c d2 78 c1 df 01 ac 6a 72 05 88 79 f7 ee fb ec  ..x....jr..y....
 <br>0410   a4 ed 2b 21 f0 e7 26 a9 06 f1 44 8b bc a3 a8 27  ..+!..&...D....'
-<br>0420   d1 dd c5 97 84 45 5a 60 00 e7 1c bf 4f 1d c2 88  .....EZ`....O...
+<br>0420   d1 dd c5 97 84 45 5a 60 00 e7 1c bf 4f 1d c2 88  .....EZ....O...
 <br>0430   a3 21 38 04 fe 59 a8 ab be b3 1f 87 1c 92 13 d4  .!8..Y..........
 <br>0440   eb 49 2d bb a7 f0 9b 1a 53 a4 1f f7 bc 84 f5 5b  .I-.....S......[
 <br>0450   a3 64 a4 0a c6 3a 2a 6d 54 f7 5d ab 55 2c da 80  .d...:*mT.].U,..
@@ -259,7 +258,7 @@ NORMAL:
 <br>0100   bb 11 bd c5 1e 2e 2c 1f c2 07 7e ef c4 b7 76 86  ......,...~...v.
 <br>0110   10 14 96 71 02 0f 63 4f 32 00 31 98 15 2b a1 31  ...q..cO2.1..+.1
 <br>0120   9e fc 50 0a 3a 45 89 8f c6 23 af ef a5 91 b1 cb  ..P.:E...#......
-<br>0130   7e a6 61 60 73 86 2d 31 23 77 3f 3c a8 21 ab 0e  ~.a`s.-1#w?<.!..
+<br>0130   7e a6 61 60 73 86 2d 31 23 77 3f 3c a8 21 ab 0e  ~.as.-1#w?<.!..
 <br>0140   f8 48 b9 a8 6f 46 c2 ea 52 8a db 48 95 66 f3 e5  .H..oF..R..H.f..
 <br>0150   3f a1 9b dd a2 b4 05 08 75 f4 f9 14 65 bb af 8f  ?.......u...e...
 <br>0160   37 7d 7f a1 73 c9 56 ba ec 4f 8f c4 2d be 31 c9  7}..s.V..O..-.1.
@@ -271,7 +270,7 @@ NORMAL:
 <br>01c0   fd ef 03 2f 50 5f 9a 9e d8 2d 33 89 70 82 93 0e  .../P_...-3.p...
 <br>01d0   61 af 21 4f 0c 76 85 ae 74 94 20 a9 50 0f 49 af  a.!O.v..t. .P.I.
 <br>01e0   80 cc 35 bb 0e a1 e3 fc 79 43 3a ba 80 d5 71 da  ..5.....yC:...q.
-<br>01f0   2d e1 28 f1 71 47 40 97 8f c3 d0 1f 0e 01 60 29  -.(.qG@.......`)
+<br>01f0   2d e1 28 f1 71 47 40 97 8f c3 d0 1f 0e 01 60 29  -.(.qG@.......)
 <br>0200   bd 96 2d 10 a2 bc ae e8 da 0a 9f 93 59 f9 2b 71  ..-.........Y.+q
 <br>0210   62 12 17 ab 5e bd 37 f0 1c 64 db 43 e2 13 14 e8  b...^.7..d.C....
 <br>0220   30 f0 75 46 0b a4 4c 8b d4 a2 3f b7 78 fc 40 22  0.uF..L...?.x.@"
@@ -288,7 +287,7 @@ NORMAL:
 <br>02d0   1c 12 85 8e 51 7f ad 31 d7 cd ff 30 1d 0c ea af  ....Q..1...0....
 <br>02e0   5e f5 b4 25 e5 cf 28 4d 91 f4 a8 a1 52 4e 3d 4d  ^..%..(M....RN=M
 <br>02f0   75 8a 8d 03 ba e5 81 51 74 c0 15 f9 e4 cb 72 d2  u......Qt.....r.
-<br>0300   b6 c8 e6 81 4c ef 60 59 81 e3 f6 f4 9e b0 82 f9  ....L.`Y........
+<br>0300   b6 c8 e6 81 4c ef 60 59 81 e3 f6 f4 9e b0 82 f9  ....L.Y........
 <br>0310   62 d4 8c 49 ec ed 76 73 ae 23 dd 35 81 b8 fe e2  b..I..vs.#.5....
 <br>0320   d5 b1 51 a1 f3 16 eb 75 be 29 0c cc c4 66 7c 19  ..Q....u.)...f|.
 <br>0330   07 2b 39 30 12 5c d2 ad e2 da de 9c 8f 62 92 8f  .+90.\.......b..
@@ -304,8 +303,8 @@ NORMAL:
 <br>03d0   59 f4 e1 ac 1c f9 d8 d6 cb d9 57 58 30 dd f1 a1  Y.........WX0...
 <br>03e0   84 82 71 d8 00 a1 92 d0 2a e2 a3 b1 b0 e9 0c 8b  ..q.....*.......
 <br>03f0   b5 dd ac 9d db 82 07 80 bf 9a 90 6c b6 3f e0 47  ...........l.?.G
-<br>0400   51 dc 27 af bd a1 a1 b2 2b ca ca d7 ef 27 c8 00  Q.'.....+....'..
-<br>0410   2a 2a b8 77 a2 6d b8 a5 33 e5 16 ed 31 7f c4 99  **.w.m..3...1...
+<br>0400   51 dc 27 af bd a1 a1 b2 2b ca ca d7 ef 27 c8 00  Q......+......
+<br>0410   2a 2a b8 77 a2 6d b8 a5 33 e5 16 ed 31 7f c4 99  *.w.m..3...1...
 <br>0420   31 d7 2d 4a df 9b 39 ce 46 47 5a 17 f5 a5 34 82  1.-J..9.FGZ...4.
 <br>0430   81 66 05 96 94 35 9e 4f 36 a0 62 f3 a4 11 2d c5  .f...5.O6.b...-.
 <br>0440   9c 3c f7 86 68 c4 2f 0f c8 01 80 d5 ab ae cf 3a  .<..h./........:
@@ -322,7 +321,7 @@ NORMAL:
 <br>04f0   1c 8c 64 bb e2 c1 14 b4 82 32 b8 28 c6 b3 68 f5  ..d......2.(..h.
 <br>0500   4d 3a 64 61 24 7d e4 04 7a 78 56 b4 d8 09 ad 50  M:da$}..zxV....P
 <br>0510   7f 31 28 0a 1e 79 c6 b7 a7 31 08 42 8a fa bc 3e  .1(..y...1.B...>
-<br>0520   c6 3b d3 aa 67 12 53 c2 65 60 02 f3 39 60 fe e6  .;..g.S.e`..9`..
+<br>0520   c6 3b d3 aa 67 12 53 c2 65 60 02 f3 39 60 fe e6  .;..g.S.e..9..
 <br>0530   be 1f 5a 5f 6b 33 92 ab c0 c9 7c 44 93 ab 68 d6  ..Z_k3....|D..h.
 <br>0540   6a 2f d6 24 de be 74 f7 95 a1 f8 ab 9a eb fa 78  j/.$..t........x
 <br>0550   c2 f5 c4 00 69 c7 c0 55 c6 2e c6 7a ac f8 3f 46  ....i..U...z..?F
@@ -333,14 +332,14 @@ NORMAL:
 <br>05a0   91 22 62 52 70 49 6c 15 79 e7 47 72 4a a4 c0 13  ."bRpIl.y.GrJ...
 <br>05b0   17 1c b8 d5 86 ec d9 51 d1 f0 91 16 14 51 cf a7  .......Q.....Q..
 <br>05c0   cc 21 d2 6b 1e 09 53 b1 b7 82 54 35 ed 0b 1c ec  .!.k..S...T5....
-<br>05d0   de 28 ce 73 ad a9 8b 60 f0 43 47 c6 75 67 1f a9  .(.s...`.CG.ug..
-<br>05e0   00 32 99 11 8b e5 a2 b3 fb 3b 27 63              .2.......;'c
+<br>05d0   de 28 ce 73 ad a9 8b 60 f0 43 47 c6 75 67 1f a9  .(.s....CG.ug..
+<br>05e0   00 32 99 11 8b e5 a2 b3 fb 3b 27 63              .2.......;c
 <br>
 <br>0000   00 04 00 01 00 06 e0 db 55 d8 d4 79 43 e7 08 00  ........U..yC...
 <br>0010   45 00 05 dc 00 f6 40 00 40 06 b0 ce c0 a8 01 02  E.....@.@.......
 <br>0020   c0 a8 01 05 ba e8 00 8b a0 3b 33 bd ad 6e 9d f6  .........;3..n..
 <br>0030   80 10 00 e5 05 76 00 00 01 01 08 0a d8 4c 3d 42  .....v.......L=B
-<br>0040   00 19 47 ff 40 df 99 2f 60 58 a0 d8 b3 12 01 11  ..G.@../`X......
+<br>0040   00 19 47 ff 40 df 99 2f 60 58 a0 d8 b3 12 01 11  ..G.@../X......
 <br>0050   7f e4 ca e9 70 67 45 3f cd 5a 4c b8 c9 b9 12 d8  ....pgE?.ZL.....
 <br>0060   6c 31 48 a1 ae df e9 72 68 73 fa 54 d4 f0 e9 eb  l1H....rhs.T....
 <br>0070   c9 0a b5 32 ae a9 d6 bc f9 30 42 6c df fd 51 79  ...2.....0Bl..Qy
@@ -365,8 +364,8 @@ NORMAL:
 <br>01a0   b0 5f d7 78 1a 0c 74 20 e1 c6 71 20 b9 25 7f cc  ._.x..t ..q .%..
 <br>01b0   11 09 2e 1c 21 e0 2a 16 54 ec 3a 6f 2b c6 07 e9  ....!.*.T.:o+...
 <br>01c0   d9 42 71 d2 e3 8f 6d c6 c2 97 24 68 2b ab 48 51  .Bq...m...$h+.HQ
-<br>01d0   93 bd 60 ac 3a c8 87 57 46 c4 02 47 9a f4 82 2e  ..`.:..WF..G....
-<br>01e0   e1 60 f0 91 2a ea b9 c7 85 87 7e 20 24 2d c2 48  .`..*.....~ $-.H
+<br>01d0   93 bd 60 ac 3a c8 87 57 46 c4 02 47 9a f4 82 2e  ...:..WF..G....
+<br>01e0   e1 60 f0 91 2a ea b9 c7 85 87 7e 20 24 2d c2 48  ...*.....~ $-.H
 <br>01f0   74 95 99 86 56 c5 45 6f 96 25 4d 50 ae b1 a0 88  t...V.Eo.%MP....
 <br>0200   83 1c 3b 15 23 4f ab 33 dc 92 69 c0 c8 1d 62 9a  ..;.#O.3..i...b.
 <br>0210   01 b4 5a 43 38 3c 20 93 2a d2 91 d1 30 5f cb b4  ..ZC8< .*...0_..
@@ -405,7 +404,7 @@ NORMAL:
 <br>0420   3e c8 c4 db a5 a7 9c 84 fc 1a ae e5 49 67 22 bb  >...........Ig".
 <br>0430   e3 5d 76 20 65 1d d6 a7 f7 45 cd 19 55 be 34 2a  .]v e....E..U.4*
 <br>0440   15 b9 33 53 c9 ad 1e 41 5f 61 cc 34 41 e6 9f 80  ..3S...A_a.4A...
-<br>0450   b8 d9 37 9f 60 2f c8 8c d9 68 31 12 d7 63 42 5d  ..7.`/...h1..cB]
+<br>0450   b8 d9 37 9f 60 2f c8 8c d9 68 31 12 d7 63 42 5d  ..7./...h1..cB]
 <br>0460   37 61 0d a6 85 cb 5d 4a a8 41 63 f5 bb 8e 11 0a  7a....]J.Ac.....
 <br>0470   4c c9 54 00 82 c3 5f 84 3d 07 12 58 0a 18 a5 47  L.T..._.=..X...G
 <br>0480   c6 9d 81 16 0e 08 ee 92 2a 07 6a b7 97 28 1d cf  ........*.j..(..
@@ -432,7 +431,7 @@ NORMAL:
 <br>05d0   e2 e9 61 ee bb 34 e3 83 ef 6c 77 3e e3 53 7e c7  ..a..4...lw>.S~.
 <br>05e0   6f 56 85 ba 8a b2 6b 8c 38 c3 d9 8c              oV....k.8...
 <br>
-<br>Responce: OutOfOrder
+Responce: OutOfOrder
 <br>
 <br>0000   00 00 00 01 00 06 e0 db 55 d8 d4 79 32 00 08 00  ........U..y2...
 <br>0010   45 00 05 dc 67 73 40 00 40 06 4a 51 c0 a8 01 02  E...gs@.@.JQ....
@@ -440,7 +439,7 @@ NORMAL:
 <br>0030   80 10 00 e5 53 2c 00 00 01 01 08 0a d8 4c f3 d5  ....S,.......L..
 <br>0040   00 1c 22 4c e9 8b 3e 81 fa 29 88 d2 db aa b8 13  .."L..>..)......
 <br>0050   14 0c f3 0b b7 c5 f2 f4 51 cc 53 c7 1f a7 0b 68  ........Q.S....h
-<br>0060   60 29 56 30 fb 55 03 98 6e 2c 4b 76 33 8a 3c 33  `)V0.U..n,Kv3.<3
+<br>0060   60 29 56 30 fb 55 03 98 6e 2c 4b 76 33 8a 3c 33  )V0.U..n,Kv3.<3
 <br>0070   82 23 4d 14 f7 1c 23 31 5e 47 42 fe 50 e0 f3 e0  .#M...#1^GB.P...
 <br>0080   98 da 88 da e5 76 3e 55 ba e7 a9 73 d3 e5 20 e3  .....v>U...s.. .
 <br>0090   8a 25 38 32 8e 42 19 44 4e 08 aa 0d 8b 97 c3 66  .%82.B.DN......f
@@ -468,14 +467,14 @@ NORMAL:
 <br>01f0   0f 6f 38 1f e4 1d 92 86 8a a9 2b d1 75 1a b8 29  .o8.......+.u..)
 <br>0200   20 2d 58 d3 ef 3a 4d f3 d6 f4 35 02 09 2b 6f 19   -X..:M...5..+o.
 <br>0210   4c f3 c0 1c be 37 3b e2 03 41 4b 96 5e bb 69 4d  L....7;..AK.^.iM
-<br>0220   aa 9a 3b f7 fb b7 94 60 27 48 a9 a5 a9 e3 2e b5  ..;....`'H......
+<br>0220   aa 9a 3b f7 fb b7 94 60 27 48 a9 a5 a9 e3 2e b5  ..;....'H......
 <br>0230   e5 6d 8c e6 64 29 dd dd 1a 96 ef b2 3f 9f e0 f5  .m..d)......?...
 <br>0240   36 0d 5d 2e 43 30 24 97 ad 95 7f d1 fa 7d d1 de  6.].C0$......}..
 <br>0250   ee e3 e3 3a a2 04 63 41 ce 1a ae f6 04 e1 eb dd  ...:..cA........
 <br>0260   49 c8 0d aa 08 e1 2d 14 29 18 6b 08 e3 b3 0e ac  I.....-.).k.....
 <br>0270   11 ad 1d 30 5e 39 84 24 c2 af 1b 75 1f 1a 64 62  ...0^9.$...u..db
 <br>0280   b5 74 b4 4c e4 d1 14 ab cd 8a 12 32 db 7f 2a 4b  .t.L.......2..*K
-<br>0290   b9 3b c9 52 f7 ae 60 ba 6b c7 06 43 d9 62 d9 bc  .;.R..`.k..C.b..
+<br>0290   b9 3b c9 52 f7 ae 60 ba 6b c7 06 43 d9 62 d9 bc  .;.R...k..C.b..
 <br>02a0   f5 9f 2f 19 89 9d 52 64 6e 94 ae 70 6c 65 5f 73  ../...Rdn..ple_s
 <br>02b0   7c e0 97 00 3b 6c 3f e9 b0 ca aa 34 cd 3b 6f 0d  |...;l?....4.;o.
 <br>02c0   24 ac e9 f4 48 cb bc 70 3d d5 cf f7 46 80 af 9c  $...H..p=...F...
@@ -488,7 +487,7 @@ NORMAL:
 <br>0330   e0 dd d0 b5 8f 19 64 dd b8 cb a6 11 35 c1 3e 0e  ......d.....5.>.
 <br>0340   de 14 10 fe d3 57 dd 62 21 9c 24 43 ce d6 4b 35  .....W.b!.$C..K5
 <br>0350   4d 1b 30 3a 70 c2 18 05 e7 30 10 77 7b a7 3a 01  M.0:p....0.w{.:.
-<br>0360   e9 12 7a f2 d5 3d 76 0d 54 79 5a 89 ad ff 60 2e  ..z..=v.TyZ...`.
+<br>0360   e9 12 7a f2 d5 3d 76 0d 54 79 5a 89 ad ff 60 2e  ..z..=v.TyZ....
 <br>0370   56 8a 88 cf 69 9f 57 9b d1 bc 81 d3 dd 38 db 8e  V...i.W......8..
 <br>0380   49 78 b3 35 80 6f af 86 e7 5e c3 56 bd 20 7d 06  Ix.5.o...^.V. }.
 <br>0390   d7 e1 90 90 dc 20 43 cc 89 50 a0 90 97 fd 01 a9  ..... C..P......
@@ -505,7 +504,7 @@ NORMAL:
 <br>0440   0e 86 c0 06 81 ac 2c 85 7a 78 69 89 40 d0 47 0f  ......,.zxi.@.G.
 <br>0450   fc 54 c1 9b 6f a6 ae dc a9 4c 74 5c 2d d4 e6 48  .T..o....Lt\-..H
 <br>0460   d0 bc 30 6c 57 76 e0 6a b6 2c 5f ae 34 83 e6 1f  ..0lWv.j.,_.4...
-<br>0470   2e c9 ca 2c a0 60 71 bf 67 fb 35 36 ea 3f 27 a2  ...,.`q.g.56.?'.
+<br>0470   2e c9 ca 2c a0 60 71 bf 67 fb 35 36 ea 3f 27 a2  ...,.q.g.56.?'.
 <br>0480   ff 0e 54 b0 9c 22 c4 c0 83 be ee 02 3f 37 3d 22  ..T.."......?7="
 <br>0490   d3 93 3a 2b 95 e1 9b fb 23 bc fc 45 1a ed 3d 73  ..:+....#..E..=s
 <br>04a0   ce a2 29 c1 12 78 bb 67 20 83 ba 3d a7 4c ef ce  ..)..x.g ..=.L..
@@ -519,7 +518,7 @@ NORMAL:
 <br>0520   55 26 ef 83 84 b1 9b 1b 78 20 83 ae 64 ed 8c 8f  U&......x ..d...
 <br>0530   5d 19 14 ed 45 2b 49 88 c7 7f 0b 89 97 19 3f 05  ]...E+I.......?.
 <br>0540   42 42 59 b7 ab 56 f5 49 1f 4b b4 f7 cc 00 e8 98  BBY..V.I.K......
-<br>0550   47 79 44 60 54 15 ad 8c 18 a5 9b 87 d0 b5 e8 cb  GyD`T...........
+<br>0550   47 79 44 60 54 15 ad 8c 18 a5 9b 87 d0 b5 e8 cb  GyDT...........
 <br>0560   3e 84 8e c5 3a 71 66 44 ec af 05 da 59 99 5d 8e  >...:qfD....Y.].
 <br>0570   44 39 8f 0c 7d f1 28 04 b7 d0 da 4a 7a 15 8b cc  D9..}.(....Jz...
 <br>0580   d7 a9 87 e9 32 ef e0 fb 45 81 4b d6 ea 0e ac 0c  ....2...E.K.....
@@ -536,7 +535,7 @@ NORMAL:
 <br>0030   80 10 01 01 6d 59 00 00 01 01 08 0a 00 1c 22 54  ....mY........"T
 <br>0040   d8 4c f3 d5                                      .L..
 <br>
-<br>@Registration:
+Registration:
 <br>
 <br>0000   00 00 00 01 00 06 9c 2a 70 13 e5 2b da 8e 08 00  .......*p..+....
 <br>0010   45 00 00 34 4c 27 40 00 80 06 2b 45 c0 a8 01 05  E..4L'@...+E....
@@ -568,9 +567,9 @@ NORMAL:
 <br>00e0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 <br>00f0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ...............
 <br>
-<br># Short Massage Will endup with a continuess request Header Response:
+Short Massage Will endup with a continuess request Header Response:
 <br>
-<br># short Query:
+short Query:
 <br>
 <br>0000   00 00 00 01 00 06 9c 2a 70 13 e5 2b 74 21 08 00  .......*p..+t!..
 <br>0010   45 00 00 3c 4c 3d 40 00 80 06 2b 27 c0 a8 01 05  E..<L=@...+'....
@@ -589,9 +588,9 @@ NORMAL:
 <br>0030   50 14 00 00 76 9d 00 00 54 ff 4a 57 d0 67        P...v...T.JW.g
 <br>
 <br>
-<br>Continues response:
+Continues response:
 <br>
-<br>#NBNS:
+NBNS:
 <br>
 <br>0000   00 04 00 01 00 06 e0 db 55 d8 d4 79 00 00 08 00  ........U..y....
 <br>0010   45 00 00 35 66 75 40 00 40 06 50 f6 c0 a8 01 02  E..5fu@.@.P.....
