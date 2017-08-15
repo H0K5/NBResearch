@@ -4,11 +4,11 @@ this repository is for my own research about netbios over tcp protocol, and cont
 Netbios over tcp is a default protocol on any windows machine, evan in its latest forms. meaning that any security bug that will maybe be found in NetBt.sys / NetBios.sys will effect many operating machines. in a addition such network protocols take arbitrary packets from the outer net and ,(for better efficacy), deal with the data straight in the kernel (the main drivers are listed above). from the latest smb vulnerabilities found in srv.sys (see sleepya work on reversing the 'ethereal-family') we can see that there is big potential in network drivers for RCE's, while the ssesion service over tcp (netbios port-139) takes the user parameters and makes direct analysis over the remote packet data in order to operate. this interesting fact make's a great potential in study'ing this specific protocol, as all we need is an opertunity to control the MDL- for arbitrery write, or better get one pointer for code execution.
 # first observation
 port 139 (session service) takes in account the data segmant in the remote packet in order to manufacture the return packet, he do that mainlly in Netbios.sys, while from my short expiriance i can tell that when providing that port a short one byte data containing packet the protocol would not return a name and close the socket as usual, but wait for additional data to be recieved from the end port. i will point out that giving the port an extra tail after the 'USER' syntax will let you send up to giga bytes to the server, while this data is not being saved over the session it still hold a sufficant reason to make continue's research on those three protocols, because they simply take data coming out of the network and deal with it inside the kernel, as mentioned earlier all one needs is a cross-border copy in one of the functions inside the network drivers to get arbitrary code-execution.
-
+<br><br>
   NORMAL:
 <br>
   Query:
-<br>
+<br><br>
 <br>0000   00 00 00 01 00 06 a0 ab 1b 5e 44 f2 00 00 08 00  .........^D.....
 <br>0010   45 00 00 4e 00 00 40 00 40 11 b7 48 c0 a8 01 01  E..N..@.@..H....
 <br>0020   c0 a8 01 05 96 2a 00 89 00 3a a3 4e 03 e8 00 00  .....*...:.N....
@@ -22,9 +22,9 @@ port 139 (session service) takes in account the data segmant in the remote packe
 <br>0030   00 01 00 00 00 00 00 00 20 43 4b 41 41 41 41 41  ........ CKAAAAA
 <br>0040   41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41  AAAAAAAAAAAAAAAA
 <br>0050   41 41 41 41 41 41 41 41 41 00 00 21 00 01        AAAAAAAAA..!..
-<br>
+<br><br><br>
   Response:
-<br>
+<br><br><br>
 <br>0000   00 04 00 01 00 06 9c 2a 70 13 e5 2b 00 17 08 00  .......*p..+....
 <br>0010   45 00 00 ef 2b 73 00 00 80 11 8b 34 c0 a8 01 05  E...+s.....4....
 <br>0020   c0 a8 01 01 00 89 e5 ae 00 db b7 aa 03 e8 84 00  ................
@@ -41,11 +41,11 @@ port 139 (session service) takes in account the data segmant in the remote packe
 <br>00d0   00 08 00 27 2a 28 ac 00 00 00 00 00 00 00 00 00  ...'*(..........
 <br>00e0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 <br>00f0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ...............
-<br>
+<br><br><br>
     Corrupted: Junk Query, that can go up to gigabytes of Transmission.
-<br>
+<br><br><br>
     cat /dev/urandom | nc 192.168.1.5 139
-<br>
+<br><br><br>
 <br>0000   00 04 00 01 00 06 e0 db 55 d8 d4 79 ae 67 08 00  ........U..y.g..
 <br>0010   45 00 05 dc 00 f3 40 00 40 06 b0 d1 c0 a8 01 02  E.....@.@.......
 <br>0020   c0 a8 01 05 ba e8 00 8b a0 3b 22 c5 ad 6e 9d f6  .........;"..n..
