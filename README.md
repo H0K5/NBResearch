@@ -44,7 +44,7 @@ Response:
 <br>
 Corrupted: Junk Query, that can go up to gigabytes of Transmission.
 <br>
-<br>'cat /dev/urandom | nc 192.168.1.5 139'
+<br>cat /dev/urandom | nc 192.168.1.5 139
 <br>
 <br>0000   00 04 00 01 00 06 e0 db 55 d8 d4 79 ae 67 08 00  ........U..y.g..
 <br>0010   45 00 05 dc 00 f3 40 00 40 06 b0 d1 c0 a8 01 02  E.....@.@.......
