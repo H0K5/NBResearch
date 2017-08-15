@@ -5,9 +5,9 @@ Netbios over tcp is a default protocol on any windows machine, evan in its lates
 # first observation
 port 139 (session service) takes in account the data segmant in the remote packet in order to manufacture the return packet, he do that mainlly in Netbios.sys, while from my short expiriance i can tell that when providing that port a short one byte data containing packet the protocol would not return a name and close the socket as usual, but wait for additional data to be recieved from the end port. i will point out that giving the port an extra tail after the 'USER' syntax will let you send up to giga bytes to the server, while this data is not being saved over the session it still hold a sufficant reason to make continue's research on those three protocols, because they simply take data coming out of the network and deal with it inside the kernel, as mentioned earlier all one needs is a cross-border copy in one of the functions inside the network drivers to get arbitrary code-execution.
 
-NORMAL:
+  NORMAL:
 <br>
-Query:
+  Query:
 <br>
 <br>0000   00 00 00 01 00 06 a0 ab 1b 5e 44 f2 00 00 08 00  .........^D.....
 <br>0010   45 00 00 4e 00 00 40 00 40 11 b7 48 c0 a8 01 01  E..N..@.@..H....
@@ -23,7 +23,7 @@ Query:
 <br>0040   41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41  AAAAAAAAAAAAAAAA
 <br>0050   41 41 41 41 41 41 41 41 41 00 00 21 00 01        AAAAAAAAA..!..
 <br>
-Response:
+  Response:
 <br>
 <br>0000   00 04 00 01 00 06 9c 2a 70 13 e5 2b 00 17 08 00  .......*p..+....
 <br>0010   45 00 00 ef 2b 73 00 00 80 11 8b 34 c0 a8 01 05  E...+s.....4....
@@ -42,9 +42,9 @@ Response:
 <br>00e0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 <br>00f0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ...............
 <br>
-Corrupted: Junk Query, that can go up to gigabytes of Transmission.
+    Corrupted: Junk Query, that can go up to gigabytes of Transmission.
 <br>
-<br>cat /dev/urandom | nc 192.168.1.5 139
+    cat /dev/urandom | nc 192.168.1.5 139
 <br>
 <br>0000   00 04 00 01 00 06 e0 db 55 d8 d4 79 ae 67 08 00  ........U..y.g..
 <br>0010   45 00 05 dc 00 f3 40 00 40 06 b0 d1 c0 a8 01 02  E.....@.@.......
